@@ -1,0 +1,37 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1">
+            Codigo: <input type="number" id="codigo" min="0" step="1" name="codigo" [(ngModel)]="codigo"> <!-- Disposición de los elementos sin bootstrap para ser lo más parecido al ejemplo -->
+        </div>
+        <div class="col-1">
+            <!-- <input type="number" min="0" step="1" value="0" name="codigo">  Disposición de los elementos con bootstrap para maquetar como en el ejemplo-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            descripcion: <input type="text" id="descripcion" name="descripcion" [(ngModel)]="descripcion"> <!-- Disposición de los elementos sin bootstrap para ser lo más parecido al ejemplo -->
+        </div>
+        <div class="col-1">
+            <!-- <input type="text" name="descripcion"> Disposición de los elementos con bootstrap para maquetar como en el ejemplo-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            precio: <input type="number"  id="precio" min="0" step="1" name="precio" [(ngModel)]="precio"> <!-- Disposición de los elementos sin bootstrap para ser lo más parecido al ejemplo -->
+        </div>
+        <div class="col-1">
+            <!-- <input type="number" min="0" step="1" value="0" name="codigo">  Disposición de los elementos con bootstrap para maquetar como en el ejemplo-->
+        </div>
+    </div>
+    <div class="row">
+        <button (click)="agregar()">Agregar</button>                   <!-- Disposición de los elementos sin bootstrap para ser lo más parecido al ejemplo -->
+        <button (click)="modificar()">Modificar</button>
+        <!-- <div class="col-1">
+        <button>Agregar</button>
+        </div>                                        Disposición de los elementos con bootstrap para maquetar como en el ejemplo
+        <div class="col-1">
+            <button>Modificar</button>
+        </div> -->
+    </div>
+</div>

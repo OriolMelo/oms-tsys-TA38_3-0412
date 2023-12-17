@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <table class="">
+      <tbody>
+          <td>Codigo</td>
+          <td>Descripción</td>
+          <td>Precio</td>
+          <td>Borrar</td>
+          <td>Seleccionar</td>
+        @for (objeto of vector; track $index) {
+        <tr>
+          <td>{{ objeto.getCodigo() }}</td>
+          <td>{{ objeto.getDescripcion() }}</td>
+          <td>{{ objeto.getPrecio() }}</td>
+          <td><button (click)="borrar($index)">Borrar</button></td>
+          <td><button (click)="seleccionar($index)">Selecionar</button></td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
